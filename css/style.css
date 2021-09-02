@@ -1,0 +1,170 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+}
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+nav {
+    width: 73%;
+    padding: 1%;
+    outline: 1px solid green;
+}
+ul {
+    width: 50%;
+    margin-right: auto;
+    float: right;
+}
+li {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+
+}
+.heroImg {
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(../images/KB.jpg);
+    background: lightGrey;
+}
+.aboutMe {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 10px;
+    left: 10px;
+    background: rgba(0.0.0.0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    outline: 1px solid yellowgreen;
+
+}
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+  .flexContainer {
+      display: flex;
+      Height: 200px;
+      align-items:space-around;
+      justify-content: center;
+      margin: 20px;
+      padding: 20px;
+      flex-direction: row;
+      outline: 2px solid red;
+  }
+  #workGrid {
+      display: grid;
+      margin: 0px 5%;
+      min-height: 500px;
+      height: 70vh;
+      grid-template-rows: 33% 33% 33%;
+      grid-template-columns: 25% 75%;
+      grid-template-areas: 
+      "reviveImage" "eaganImage" "petsImage" 
+      "reviveProject" "eaganProject" "petsProject"; 
+      outline: 2px solid blue;
+  }
+
+#reviveImage {
+    grid-area: reviveImage;
+    background-image: url("../images/revive.png");
+}
+
+#eaganImage {
+    grid-area: eaganImage;
+    background-image: url("../images/Eagan\ Art.png");
+}
+
+#petsImage {
+    grid-area: petsImage;
+    background-image: url(../images/Petsonly.png);
+}
+
+#reviveProject, #eaganProject, #petsProject {
+    outline: 2px solid black;
+    padding: 5px;
+    align-items: center;
+
+}
+.workGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+footer {
+    background-color: #373738;
+    width: 1440px;
+
+/**/html {scroll-behavior: smooth;}/**/ 
+  body {
+      font-family: 'Roboto', arial, sans-serif;
+      margin: 40px;
+      padding: 40px;
+  }
+  p {
+      font-size: 24px;
+      line-height: 2;
+      padding-top: 32px;
+      padding-bottom: 32px;
+  }
+  .bold {
+    font-size:36px;  
+    font-weight: 800;
+      margin: 20px;
+      padding: 20px;
+  }
+  
+  .goToTopLink {
+      background-color: pink;
+      padding: 12px;
+      border-radius: 8px;
+      color: #222;
+      font-size: 12px;
+  }
+  
+  .goToTopLink:active {
+      background-color: yellow;
+      font-size: 15px;
+      transition: all .5s ease-out;
+  }
+  
+  @media only screen and (max-width: 600) {
+    .flexContainer {
+        display: flex;
+        Height: 200px;
+        align-items:space-around;
+        justify-content: center;
+        margin: 20px;
+        padding: 20px;
+        flex-direction: column;
+        outline: 2px solid red;
+    }
+    #workGrid {
+        display: grid;
+        margin: 0px 5%;
+        min-height: 500px;
+        height: 70vh;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-columns: 25% 75%;
+        grid-template-areas: 
+        "reviveImage" "eaganImage" "petsImage" 
+        "reviveProject" "eaganProject" "petsProject"; 
+        outline: 2px solid blue;
+    }
+  }
