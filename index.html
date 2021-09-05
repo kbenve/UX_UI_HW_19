@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>UX/UI HW 18</title>
+        <title>UX/UI HW 19</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
         crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("#p1").mouseenter(function(){
+                alert("You are awesome!!! You are even better than a unicorn - because you are real! ");
+              });
+            });
+            </script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <!-- This is for the scroll to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+
         <!-- This is the anchor for Go to top of page link -->
         <div id="top"></div>
         <header class="navigation">
@@ -33,96 +47,105 @@
 
         </header>
 
-        <div class="heroImg">
+    
+        
+    
+    <div class="heroImg">
             <img>
+            
             <div class="aboutMe">
-                <h2>Hi! I'm Kate.</h2>
-                <p>I'm an expert-level problem solver committed to delivering creative results.</p>
-                <button>Download Resume</button>
+               
+                <button id="p1">Some sunshine for you!</button>
+                
             </div>
         </div>
+
+
 <!-- Bootstrap Navigation -->
 
-  
-  <h1>Hi! I'm Kate.</h1>
-  <small>I'm an expert level problem solver with a background in Marketing, Managing Teams, and UX/UI Research and Design.
-  <p>
-  <span class="bold">Work</span> I will write some more awesome stuff about myself here. </p>
-  
-      <button class="goToTopLink"><a href="#top">Go to top of page</a></button>
-  <p>
-  <span class="bold">Skills</span> Aenean vel orci id justo hendrerit tristique. Etiam id diam massa. 
-  Phasellus volutpat purus vel sem blandit tincidunt. Vivamus ut tincidunt eros, id mollis justo. Phasellus imperdiet non diam non molestie. Nullam semper nibh quis erat ultricies, ac pellentesque urna imperdiet. Aenean ut turpis nec elit efficitur sodales. In rutrum euismod consectetur. Maecenas pretium, diam a vehicula mollis, lacus sapien interdum turpis, et dignissim nibh tortor sit amet augue. Sed ultricies sodales molestie. Nullam eget aliquet risus. Nulla ultricies cursus facilisis. Nulla eget cursus nisi, vitae tincidunt augue. Quisque venenatis vitae lectus et condimentum.
-  </p>
+
   <!-- This div id is the anchor for paragraph 3 -->
+  <div id="p-2"></div>
+  <div class="about">
+    <h1>Hi! I'm Kate!</h1>
+    <p>I'm an expert-level problem solver with a background in Marketing, Managing Teams, and UX/UI Research and Design. I'm comitted to delivering creative results and spreading some joy along the way.</p>
+</div>
+  
   <div id="p-3"></div>
+  <div class="workSpot">
     <h1>My Work</h1>
     <div id="workGrid">
-        <div id="reviveImage" class="workGridArea">
-            <img>
+        <div class="reviveCard">
+            <div id="reviveImage" class="workGridArea">
+                <img src="images/Group 1.png" Alt="Revivehopage" style="width:98%" height=250px>
+            </div>
+            <div id="reviveProject" class="workGridArea">
+                <h4>Revive Acupuncture</h4>
+                <p>Growing a start up with responsive web design. </p>
+                <button>View Project</button>
+            </div>
         </div>
-        <div id="reviveProject" class="workGridArea">
-            <h4>Revive Acupuncture</h4>
-            <p>info about Project 1</p>
-            <button>View Project</button>
+
+        <div class="eaganCard">
+            <div id="eaganImage" class="workGridArea">
+                <img src="images/Group 2.png" alt="Eaganhomepage" style="width:98%" height=250px>
+            </div>
+            <div id="eaganProject" class="workGridArea">
+                <h4>Eagan Arts Festival</h4>
+                <p>Wed redesign.</p>
+                <button>View Project</button>
+            </div>
         </div>
-        <div id="eaganImage" class="workGridArea">
-            <img>
-        </div>
-        <div id="eaganProject" class="workGridArea">
-            <h4>Eagan Arts Festival</h4>
-            <p>info about Project 2</p>
-            <button>View Project</button>
-        </div>
-        <div id="petsImage" class="workGridArea">
-            <img>
-        </div>
+
+        <div class="petsCard">
+            <div id="petsImage" class="workGridArea">
+                <img src="images/Group 3.png" alt="petsonlyhome" style="width:98%" height=250px>
+            </div>
         <div id="petsProject" class="workGridArea">
             <h4>PetsOnly</h4>
-            <p>info about Project 3</p>
+            <p>Social media app for pets.</p>
             <button>View Project</button>
         </div>
+    </div>
+
         <h3>View all Projects</h3>
     </div>
-        <p>
-            <span class="bold">Work</span> I'm not really sure if I need to keep this paragraph?  
-       </p>
+</div>  
     
-  <a href="#top" class="goToTopLink">Go to top of page</a>
+
   <!-- This div id is the anchor for paragraph 4 -->
   <!--My Skills coded using CSS flex-->
   <div id="p-4">
-      <h1>My Skills</h1>
-        <div class=flexContainer>
-         <div>
-            <img>
-            <h3>Skill 1</h3>
-            <p>Details about a super impressive skill.</p>
-        </div>
-        <div>
-            <img>
-            <h3>Skill 2</h3>
-            <p>Details about another super impressive skill</p>
-        </div>
-        <div>
-            <img>
-            <h3>Skill 3</h3>
-            <p>Details about yet another mad skill.</p>
-        </div>
-    </div>
+     
+    <h1>My Skills</h1>
+    <div>
+        
+        <div class="container">
+            <h4>Marketing</h4>
+            <div class="skills Marketing">90%</div>
+            <h4>UX/UI Research & Design</h4>
+            <div class="skills uxui">80%</div>
+            <h4>Team Management</h4>
+            <div class="skills team">80%</div>
+            <h4>Front End Development</h4>
+            <div class="skills front">40%</div>
+        </div> 
   </div>
+
   
-  <p>
-  <span class="bold">Skills</span> Not sure i need this here? </p>
-  <a href="#top" class="goToTopLink">Go to top of page</a>
+
+ 
 
   <!-- This div id is the anchor for paragraph 5 -->
   <div id="p-5"></div>
+  <div>
   <p>
-  <span class="bold">Contact</span> Aenean eleifend augue mi, vitae luctus dolor ultrices sed. Aliquam quis vehicula leo, sed rhoncus felis. Mauris tincidunt lorem velit, at consectetur justo finibus sit amet. In hac habitasse platea dictumst. Fusce vel felis vel dolor tempus suscipit a in massa. Aliquam ullamcorper mi vehicula metus suscipit, sed pretium justo dictum. Aliquam iaculis egestas auctor. Proin posuere ultrices feugiat. Praesent sed mauris vel felis porta finibus. Nunc lobortis ex ex, sit amet auctor nibh vulputate non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur facilisis elementum quam sit amet sagittis. Vivamus eleifend accumsan nulla, eget dignissim justo varius vel. Sed nec mi vitae nunc feugiat convallis. Praesent nisl massa, auctor et scelerisque rhoncus, aliquam sed est.
+    <h1>Contact</h1>
   </p>
-  <a href="#top" class="goToTopLink">Go to top of page</a>
-  </body>
+</div>
+
+
+<body>
         <footer>
             <ul>
                 <li>About</li>
@@ -131,6 +154,27 @@
                 <li>Contact</li>
             </ul>
         </footer>
-
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        
     </body>
 </html>
